@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        body {
+            text-align: center;
+            justify-content: center;
+           
+        }
+        button {
+            background-color: red;
+            columns: white;
+            border-radius: 20px;
+            margin-top: 2%;
+            
+        }
+        button:hover {
+            background-color: blue;
+            color: white;
+           
+        }
+        #name {
+            margin-top: 20%;
+        }
+        #address{
+            margin-top: 2%;
+        }
+    </style>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    name:<input type="text" name="" id="name"> <br>
+    address:<input type="text" id="address">
+    <br>
+    <button >show</button> 
+    <h1>here we go</h1>
+    <br>
+
+    </form>
+
+    <script>
+     
+        let button = document.querySelector ("button");
+        let fun = (event) => {
+            let name = document.getElementById("name").value;
+        let address = document.getElementById("address").value;
+        let h1 = document.querySelector("h1");
+        h1.textContent = (` your name is  ${name} your address is ${address}`)
+        
+       event.preventDefault()
+
+        }
+        button.addEventListener("click", fun)
+
+    </script>
+</body>
+</html>

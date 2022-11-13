@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>car</td>
+                <td>bikes</td>
+                <td>bicycle</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>marutisuzuki</td>
+                <td>yamaha</td>
+                <td>hero</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>hyundai</td>
+            <td> royalenfield</td>
+            <td> kross  </td>
+        </tr>
+        </tfoot>
+    </table>
+    <script>
+      let a = document.querySelector("table");
+let b = a.tHead.rows[0].insertCell(3).innerHTML="6263"
+      console.log(b);
+      
+    </script>
+</body>
+</html>

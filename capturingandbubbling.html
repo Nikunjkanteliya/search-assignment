@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+     #one {
+        width: 500px;
+        height: 500px;
+        background-color: indianred;
+     }
+     #two {
+        width: 400px;
+        height: 400px;
+        background-color: gold;
+     }
+     #three {
+        width: 300px;
+        height: 300px;
+        background-color: yellowgreen;
+     }
+     #four {
+        width: 200px;
+        height: 200px;
+        background-color: darkorange;
+     }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="one">one
+    <div id="two">two
+        <div id="three">
+            three
+            <div id="four">
+                four
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let one = document.getElementById ("one");
+    let two = document.getElementById ("two");
+    let three = document.getElementById ("three");
+    let four = document.getElementById ("four");
+
+    let fone = () => {
+        console.log("1")
+    }
+
+    let ftwo = () => {
+        console.log("2")
+    }
+    let fthree = () => {
+        console.log("3")
+    }
+    let ffour = () => {
+        console.log("4")
+    }
+// // for bubbling it shoud be false  bottom to top
+// one.addEventListener("click",fone,false);
+// two.addEventListener("click",ftwo,false);
+// three.addEventListener("click",fthree,false);
+// four.addEventListener("click",ffour,false);
+
+
+// for capturing true should be there top to bottom
+// one.addEventListener("click",fone,true);
+// two.addEventListener("click",ftwo,true);
+// three.addEventListener("click",fthree,true);
+// four.addEventListener("click",ffour,true);
+</script>
+</body>
+</html>

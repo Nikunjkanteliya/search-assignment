@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+           background: linear-gradient(#274027 , thistle);
+           background-repeat: no-repeat;
+       background-size: cover;       }
+        p {
+            color: white;
+         
+        }
+    </style>
+
+    <title>Windowstyle</title>
+</head>
+<body>
+    
+    <p > I am a paragraph</p>
+</body>
+<script>
+    let a = document.querySelector("p")
+   let b = window.getComputedStyle(a)
+  
+   console.log(b);
+</script>
+</html>

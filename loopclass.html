@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p class="one">one</p>
+     <p class="one">two</p>
+     <p class="one">three</p>
+     <p class="one">four</p>
+     <p class="one">five</p>
+     <script>
+        let a= document.getElementsByClassName("one").length;
+        for (let i=0;i<a;i++){
+            let b= document.getElementsByClassName("one")[i];                                   
+            document.write(b);
+            console.log(b);
+        }
+
+        
+     </script>
+</body>
+</html>

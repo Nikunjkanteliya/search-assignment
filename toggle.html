@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+.class1{
+    background-color: blue;
+  color: white;
+}
+.class2 {
+    background-color: red;
+    color: goldenrod;
+}
+.class3{
+    background-color: orange;
+    color: brown;
+}
+    </style>
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class=" class2">
+        <h1  >this is  a  heading no 1</h1>
+    </header>
+ 
+    <button>click to change color</button>
+    <script>
+        let header = document.querySelector("header");
+     
+      let button = document.querySelector("button");
+      
+   
+       button.addEventListener("click", () => {
+
+    // if (header.className ==="class2"){
+    //     header.className ="class1"
+    // }        
+    
+
+    //  else (  header.className ="class2")
+    header.classList.toggle("class3");
+
+})
+
+    </script>
+</body>
+</html>

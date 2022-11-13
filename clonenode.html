@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <ul id="ul">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+   </ul>
+    <div id="div"> 
+
+    </div>
+     <script>
+        let a= document.getElementById("ul");
+        let b= a.cloneNode(true);
+        console.log(b);
+        let c=document.getElementById("div");
+        c.appendChild(b)
+
+       
+    
+     </script>
+
+
+
+
+</body>
+</html>

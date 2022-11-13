@@ -1,0 +1,134 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+ }
+.bold{
+   font-weight: 800;
+}
+.box{
+    border: hidden;
+outline: none;
+    border-bottom: 1px solid black;
+
+}
+.box:focus  {
+    border-bottom: 1px solid red;
+}
+#fm {
+
+   width: 400px;
+}
+#main{
+    width: 40%;
+   height: auto;
+    display: flex;
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+border-radius: 10px;
+justify-content: center;
+margin-left: 30%;
+margin-top: 1%;
+}
+#ei { display: flex;
+    margin-top: 4%;
+    width: 50%;
+}
+#ef { width: 50%;
+
+  padding-top: 10%;
+  padding-left: 10%;
+  display: flex;
+  margin-top: -19%;
+  margin-left: 45%;
+  
+    
+}
+#text{    
+ display: flex;
+ margin-left: 55%;
+
+  
+}
+#fmovie{
+    display: flex;
+    margin-top: 5%;
+}
+#am {
+    background-color: rgba(252,6,98,255);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 3%;
+    font-weight: 600;
+   
+}
+
+#s{
+    width: 40%;
+    height: auto;
+     display: flex;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+ border-radius: 10px;
+ justify-content: center;
+ margin-left: 30%;
+ margin-top: 1%;
+}
+#fbt{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 11%;
+  
+}
+#fbts{
+   
+   position: relative;
+   left: 10%;
+   top: -22%;
+   width: 400px;
+}
+#sb{
+    background-color: rgba(252,6,98,255);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+   margin-top: 13%;
+   margin-bottom: 2%;
+    font-weight: 600;
+    position: relative;
+    left: -59%;
+     
+}
+footer{
+    width: 40%;
+    height: auto;
+     display: flex;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+ border-radius: 10px;
+ justify-content: center;
+ margin-left: 30%;
+ margin-top: 1%;
+}
+ul {
+    list-style-type: none;
+    color: rgba(252,6,98,255);
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+ulo  lio {
+    display: block;
+}
+#f2{
+    width: 40%;
+    height: auto;
+     display: flex;
+ 
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+ border-radius: 10px;
+ justify-content: center;
+ margin-left: 30%;
+ margin-top: 1%;
+}

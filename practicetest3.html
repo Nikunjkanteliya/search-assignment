@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         **Write a JS code to find the no of digits in a number**
+
+// Function digitCount() to returns the number of digits in a given number using while loop.
+// **Input:**
+// 56231
+// **Output:**
+//  5
+let digitCount = (num1) => {
+  let i = 0 ;
+  num1=num1.toString()
+  let array= []
+  while(i<num1.length){
+  array.push((num1[i]))
+    i++
+  }
+  console.log(array.length)
+}
+digitCount(562315724278)
+digitCount(5623157)
+
+
+    </script>
+</body>
+</html>

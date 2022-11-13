@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        //to clone a object
+
+        // let person = {
+        //     name:"Alex",
+        //     address:"LA"
+        // }
+        // let person2 = person
+        // person.age = 40;
+        // person2.number = 123456789    // if we add something it will gets change in other one automatically
+        
+        // console.log(person);
+        // console.log(person2);
+        //--------------------- clone with the help of Object assign method
+
+        // let person = {
+        //     Name : "rahul",
+        //     ContactNo : 1234567890
+        // }
+
+        // let person2 = Object.assign ({},person);
+        // person.kite = "no" // in both lines it will target the individual object
+        // person2.bike = "yes"// same as above
+        // console.log("per1", person);
+        // console.log("per2", person2);
+        //-----------------multiple object assing-------------
+    //     let per1 = {
+    //         name : "cosmo"
+    //     }
+
+    //    let per2 = {
+    //     address : "somewhere on earth"
+    //    }
+    //     // target > select1 >select2
+    //     let per3 = Object.assign({},per1,per2);
+    //     console.log(per3);
+        // clone array without target
+        // let per = {
+        //         name : "ramsay"
+        // }
+        // let per2 = {
+        //     location : "u.s.a"
+        // }
+        // let per3 = Object.assign(per,per2); // it wil  copy all key and values in of per2 to per
+
+        // console.log( "per 3" ,per3);
+        //----------------------------------------------------------
+    //     let person = {
+    //         Name : "kite"
+    //     }
+    //    let person1 = {
+    //     fly :"yes"
+    //    }
+    //    Object.assign(person,person1);
+      
+    // //    person.light = "yes"
+    // //    person1.joy = "no"
+
+    //    console.log(person);
+
+       //-----------------------spread operator {...}
+    //    let car = {
+    //     carnoofwheels : "four"
+    //    }
+     
+    //  let bike = {
+    //     bikenoofwheels : "two"
+    //  }
+    //  let total = {...car,...bike};
+    //  console.log(total);
+    //------------------------------[...]-------------
+// let bike = {
+//     one : 'hayabusa'
+// }
+// let bike2 = {
+//     two : "ferrari"
+// }
+// // let total = Object.assign(bike,bike2)
+// // console.log(bike);
+
+// let total = {bike,...bike2};
+// console.log(total);
+//-----------assignment-----------------------
+// let p1 = {
+//   name: "rahul",
+//   address: "Pune",
+// };
+// let p2 = {
+//   location: "Bangalore",
+//   mentor: "xyz",
+// };
+
+// let all = {...p1,...p2};
+
+// console.log(all);
+//---------------destructring--------------------------------
+// let per = {
+//   name:"nick",
+//   age: 25
+// }
+// //let us do a destructing
+// let {name , age} = per
+// console.log(name);
+// console.log(age)
+</script>
+</body>
+</html>

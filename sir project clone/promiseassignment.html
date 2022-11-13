@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const promise = new Promise ((resolve,reject) => {
+        //        resolve(3)
+             
+        //    }  
+        //      ) 
+        // promise.then((a)=> { console.log(a)})
+
+
+        // alternate way 
+    //    const promise = Promise.resolve(3)
+    //     promise.then((value)=>{console.log(value)})
+
+    // Use Promise.reject(error) to create a promise that  will reject with the string "Boo!"
+    // let promise = Promise.reject("Boo!")
+    // promise.catch((rvalue)=>{ console.log(rvalue)})
+
+   // You have the outline of a function makePromiseWithConstructor(itShouldResolve)
+//Use the Promise constructor to create a promise that will:
+//resolve if itShouldResolve is truthy
+//reject if itShouldResolve is falsy
+
+// let promise  = () => { new Promise ((resolve,reject)=>{
+//     resolve(true),reject(false)
+
+// })}
+// promise().then((value)=> {
+//     console.log(value)
+// }).catch((rvalue)=> {
+//     console.log(value)})
+
+
+//This is a common use of the Promise constructor. If you want to simulate waiting for a value, a common technique is to create a function like the following. 
+//It simply accepts a value, and a delayInMs, then returns a promise that will resolve with that value after that delay.
+
+// let fun = (p) => {
+//     const promise3 =  const promise =  new Promise((resolve, reject) => {
+  
+//         if (typeof(p) ==="string"||typeof(p)==="bigint"||typeof(p)==="number"){
+         
+
+// ) 
+//   return promise }
+// promise3("hiii").then((value) => {
+
+//   console.log(value)
+// }).catch((rvalue) => {
+//   console.log(rvalue)
+// })
+
+// }
+
+const fun = (p) => {
+    const promise = new Promise ((resolve,reject) => {
+
+        if (typeof(p) ==="string"||typeof(p)==="bigint"||typeof(p)==="number" || typeof(p)==="object" || typeof(p)==="function"){
+        resolve("TRUE")
+        }
+        else{
+            reject("value is falsy")
+        }
+    })
+    return promise 
+}
+fun(4655622).then((value)=> {
+    console.log(value)
+})
+.catch( (v)=> {
+    console.log(v)})
+
+// This is a common use of the Promise constructor. If you want to simulate waiting for a value, a common technique is to create a function like the following. 
+
+// It simply accepts a value, and a delayInMs, then returns a promise that will resolve with that value after that delay.
+
+const fun = (valuep) => {
+const promise = new Promise ((resolve,reject)=> {
+    setTimeout(()=>{
+        resolve(valuep)
+    },5000)
+    
+})
+return promise
+}
+fun("wait").then((value)=> {
+    console.log(value)
+})
+
+
+    </script>
+</body>
+</html>

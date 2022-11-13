@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button> track me !</button>
+        <script>
+            let btn = document.querySelector("button")
+
+            //----------promise begin-----------------------
+           const fun1 = () => {
+                  const promise = new Promise ( (approved , reject)=>{
+                    navigator.geolocation.getCurrentPosition(
+                        (allow)=>{
+                            approved(allow)
+                        } ,
+                        (deny)=>{
+                            reject(deny)
+                        }
+                    )
+                  })
+                  return promise
+            }
+
+
+            fun2 = () => {
+                fun1()
+                .then((positive)=>{ console.log(positive.coords.latitude,"this is your latitude"),console.log (positive.coords.longitude ,"this is your longitude")})
+                .catch((negative)=>{ console.log(negative.message)})
+            }
+            btn.addEventListener("click",fun2)
+        </script>
+</body>
+</html>
